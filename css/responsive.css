@@ -47,8 +47,7 @@
   .container { width: min(calc(100% - 32px), var(--max-width)); }
   .section { padding: 78px 0; }
   .site-header { height: 72px; }
-  .brand-mark { width: 39px; height: 39px; }
-  .brand-copy small { font-size: .48rem; }
+  .brand-logo img, .site-header.scrolled .brand-logo img, .site-header.menu-visible .brand-logo img { width: 48px; height: 48px; border-radius: 10px; }
   .hero { min-height: auto; }
   .hero::before { mask-image: linear-gradient(to bottom, black, transparent 70%); }
   .hero-grid { display: flex; min-height: auto; flex-direction: column; gap: 28px; padding-top: 125px; padding-bottom: 30px; }
@@ -108,7 +107,7 @@
 
 @media (max-width: 390px) {
   .container { width: calc(100% - 28px); }
-  .brand-copy small { display: none; }
+  .hero h1 { font-size: clamp(2.35rem, 10.6vw, 2.7rem); }
   .button-row { align-items: stretch; flex-direction: column; }
   .button-row .button { width: 100%; }
   .hero-visual { height: 410px; }

@@ -26,8 +26,8 @@ terms.html                 Pre-launch terms placeholder
 css/style.css              Core design system and components
 css/responsive.css         Tablet and mobile layouts
 js/main.js                 Navigation, FAQ, sample modal and configuration
-assets/logo/favicon.svg    Temporary text-based HZ favicon
-assets/images/             Social sharing artwork
+assets/brand/              Official logo lock-ups, monogram and social artwork
+assets/favicon/            Complete browser and device favicon set
 assets/icons/              Reserved for approved icons
 assets/resume-samples/     Reserved for anonymised HARZAM samples
 ```
@@ -51,9 +51,8 @@ All website assets use relative paths so the project works under the `/harzam-we
 Before HARZAM begins accepting enquiries or orders:
 
 1. Add approved official contact and social links to `CONTACT_CONFIG` in `js/main.js`.
-2. Replace the temporary text-based HZ assets with approved official logo files.
-3. Confirm pricing, turnaround time, revision policy and delivery formats.
-4. Replace the pre-launch Privacy Policy and Terms placeholders with reviewed documents.
-5. Add only verified, anonymised portfolio samples and genuine testimonials.
+2. Confirm pricing, turnaround time, revision policy and delivery formats.
+3. Replace the pre-launch Privacy Policy and Terms placeholders with reviewed documents.
+4. Add only verified, anonymised portfolio samples and genuine testimonials.
 
 No business statistics, customer information, credentials or contact details are fabricated in this repository.

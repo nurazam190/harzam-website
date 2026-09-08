@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HARZAM | Professional Resume &amp; Career Services Malaysia</title>
   <meta name="description" content="Professional ATS-friendly resume writing and career services in Malaysia, designed to present your experience clearly and professionally.">
-  <meta name="theme-color" content="#0B1F33">
+  <meta name="theme-color" content="#0F1B2D">
+  <meta name="msapplication-TileColor" content="#0F1B2D">
   <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://nurazam190.github.io/harzam-website/">
@@ -15,9 +16,16 @@
   <meta property="og:description" content="Professional ATS-friendly resume writing and career services in Malaysia.">
   <meta property="og:url" content="https://nurazam190.github.io/harzam-website/">
   <meta property="og:site_name" content="HARZAM">
-  <meta property="og:image" content="assets/images/og-placeholder.svg">
+  <meta property="og:image" content="https://nurazam190.github.io/harzam-website/assets/brand/harzam-og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="HARZAM — More Than A Resume. A Brighter Tomorrow.">
 
-  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="js/main.js" defer></script>
@@ -28,9 +36,10 @@
   <header class="site-header" data-header>
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="HARZAM home">
-        <!-- Temporary text logo: replace with the official HZ logo when supplied. -->
-        <span class="brand-mark" aria-hidden="true">HZ</span>
-        <span class="brand-copy"><strong>HARZAM</strong><small>Resume &amp; Career Services</small></span>
+        <picture class="brand-logo">
+          <source media="(max-width: 700px)" srcset="assets/brand/harzam-monogram.png">
+          <img src="assets/brand/harzam-logo.png" alt="HARZAM" width="401" height="378">
+        </picture>
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu" data-menu-toggle>
@@ -434,7 +443,7 @@
   <footer class="site-footer">
     <div class="container footer-main">
       <div class="footer-brand">
-        <a class="brand" href="#home" aria-label="HARZAM home"><span class="brand-mark" aria-hidden="true">HZ</span><span class="brand-copy"><strong>HARZAM</strong><small>Resume &amp; Career Services</small></span></a>
+        <a class="brand" href="#home" aria-label="HARZAM home"><img class="footer-logo" src="assets/brand/harzam-logo-horizontal.png" alt="HARZAM — Your next opportunity starts here" width="800" height="220"></a>
         <p>Professional career presentation supported by an HR and recruitment perspective.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
