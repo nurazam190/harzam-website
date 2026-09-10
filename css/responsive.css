@@ -80,7 +80,7 @@
   .portfolio-heading > p { margin: -5px 0 35px; }
   .portfolio-grid { grid-template-columns: 1fr; margin-top: 0; }
   .portfolio-card:last-child { grid-column: auto; width: 100%; }
-  .sample-preview { height: 390px; }
+  .sample-preview { padding: 18px; }
   .positioning-list { grid-template-columns: 1fr; }
   .positioning-list > div { min-height: auto; padding: 27px; }
   .positioning-list > div:nth-child(n) { border: 1px solid rgba(255,255,255,.12); border-bottom: 0; }
@@ -101,9 +101,13 @@
   .footer-main { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { align-items: flex-start; flex-direction: column; justify-content: center; gap: 8px; padding: 18px 0; }
-  .sample-dialog { padding: 25px 18px; }
-  .dialog-preview { min-height: 360px; padding: 22px 10px; }
-  .dialog-paper { transform: scale(.9); }
+  .sample-dialog { width: calc(100% - 20px); height: 94dvh; max-height: 94dvh; border-radius: 10px; }
+  .dialog-intro { padding: 21px 62px 17px 20px; }
+  .dialog-close { top: 13px; right: 14px; }
+  .dialog-media { padding: 16px; }
+  .dialog-footer { padding: 14px 18px 18px; }
+  .dialog-cta { align-items: stretch; flex-direction: column; gap: 10px; }
+  .dialog-cta .button { width: 100%; }
   .policy-content { padding-top: 65px; }
 }
 
@@ -121,6 +125,8 @@
   .value-grid div { gap: 7px; padding: 9px 7px; font-size: .64rem; }
   .package-distinction { padding: 12px; }
   .package-deliverables { grid-template-columns: 1fr; }
-  .sample-paper { transform: scale(.92) rotate(-1.5deg); }
-  .portfolio-card:hover .sample-paper { transform: scale(.94); }
+  .sample-preview { padding: 14px; }
+  .portfolio-content { padding: 22px 20px 24px; }
+  .dialog-intro { padding-left: 18px; }
+  .dialog-footer { padding-inline: 15px; }
 }
