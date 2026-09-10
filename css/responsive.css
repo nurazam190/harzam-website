@@ -69,6 +69,13 @@
   .comparison { grid-template-columns: 1fr; gap: 0; }
   .compare-card { min-height: auto; }
   .compare-arrow { margin: -7px auto; transform: rotate(90deg); }
+  .difference-actions .button { width: 100%; }
+  .difference-actions .text-link { align-self: flex-start; }
+  .writing-transformation { margin-top: 38px; padding: 24px 22px; }
+  .writing-example { grid-template-columns: 1fr; gap: 0; }
+  .writing-card { min-height: auto; }
+  .writing-arrow { margin: -5px auto; transform: rotate(90deg); }
+  .writing-positioning { grid-template-columns: 1fr; gap: 9px; }
   .process .section-heading { margin-bottom: 48px; }
   .process-grid { grid-template-columns: 1fr; gap: 46px; }
   .process-step { display: grid; grid-template-columns: 70px 1fr; column-gap: 20px; padding: 0; text-align: left; }
@@ -125,6 +132,9 @@
   .value-grid div { gap: 7px; padding: 9px 7px; font-size: .64rem; }
   .package-distinction { padding: 12px; }
   .package-deliverables { grid-template-columns: 1fr; }
+  .writing-transformation { padding: 21px 16px; }
+  .writing-card { padding: 18px; }
+  .writing-positioning h3 { font-size: 1.35rem; }
   .sample-preview { padding: 14px; }
   .portfolio-content { padding: 22px 20px 24px; }
   .dialog-intro { padding-left: 18px; }
