@@ -83,6 +83,11 @@
   .step-icon { top: -3px; left: 50px; }
   .process-step h3 { margin: 7px 0 4px; }
   .process-step p { grid-column: 2; }
+  .process-link { grid-column: 2; justify-self: start; }
+  .process-cta { align-items: flex-start; flex-direction: column; gap: 22px; margin-top: 44px; padding-top: 27px; }
+  .process-actions { width: 100%; align-items: flex-start; flex-direction: column; gap: 10px; }
+  .process-actions .button { width: 100%; }
+  .process-actions .text-link { min-height: 44px; align-items: center; }
   .portfolio-heading { display: block; }
   .portfolio-heading > p { margin: -5px 0 35px; }
   .portfolio-grid { grid-template-columns: 1fr; margin-top: 0; }
