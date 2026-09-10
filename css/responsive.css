@@ -3,6 +3,7 @@
   .primary-nav > a:not(.button) { font-size: .72rem; }
   .hero-grid { gap: 30px; }
   .resume-stage { transform: scale(.9); transform-origin: center right; }
+  .service-card { padding-inline: 26px; }
   .difference-grid { gap: 45px; }
   .positioning-grid { gap: 65px; }
   .about-grid { gap: 70px; }
@@ -25,7 +26,9 @@
   .value-grid div:nth-child(3) { border-left: 1px solid var(--border); border-top: 1px solid var(--border); }
   .value-grid div:nth-child(4) { border-top: 1px solid var(--border); }
   .service-grid { grid-template-columns: 1fr; max-width: 660px; margin-inline: auto; }
-  .service-card { min-height: 470px; }
+  .service-card { padding-inline: 34px; }
+  .package-positioning { min-height: 0; }
+  .package-includes .check-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 30px; }
   .difference-grid { grid-template-columns: 1fr; }
   .difference-copy { max-width: 640px; }
   .process-grid { grid-template-columns: 1fr 1fr; gap: 48px 0; }
@@ -62,8 +65,7 @@
   .section-heading.centered .eyebrow { justify-content: flex-start; }
   h2 { font-size: clamp(2.2rem,11vw,3.15rem); }
   .service-grid { margin-top: 38px; }
-  .service-card { min-height: 500px; padding: 32px 27px 28px; }
-  .service-bottom { right: 27px; left: 27px; }
+  .service-card { padding: 32px 27px 28px; }
   .comparison { grid-template-columns: 1fr; gap: 0; }
   .compare-card { min-height: auto; }
   .compare-arrow { margin: -7px auto; transform: rotate(90deg); }
@@ -105,6 +107,10 @@
   .policy-content { padding-top: 65px; }
 }
 
+@media (max-width: 520px) {
+  .package-includes .check-list { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 390px) {
   .container { width: calc(100% - 28px); }
   .hero h1 { font-size: clamp(2.35rem, 10.6vw, 2.7rem); }
@@ -113,8 +119,8 @@
   .hero-visual { height: 410px; }
   .resume-stage { transform: translateX(-50%) scale(.66); }
   .value-grid div { gap: 7px; padding: 9px 7px; font-size: .64rem; }
-  .service-card { min-height: 520px; }
-  .service-bottom { align-items: flex-start; flex-direction: column; }
+  .package-distinction { padding: 12px; }
+  .package-deliverables { grid-template-columns: 1fr; }
   .sample-paper { transform: scale(.92) rotate(-1.5deg); }
   .portfolio-card:hover .sample-paper { transform: scale(.94); }
 }

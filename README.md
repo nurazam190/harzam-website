@@ -51,8 +51,7 @@ All website assets use relative paths so the project works under the `/harzam-we
 Before HARZAM begins accepting enquiries or orders:
 
 1. Add approved official contact and social links to `CONTACT_CONFIG` in `js/main.js`.
-2. Confirm pricing, turnaround time, revision policy and delivery formats.
-3. Replace the pre-launch Privacy Policy and Terms placeholders with reviewed documents.
-4. Add only verified, anonymised portfolio samples and genuine testimonials.
+2. Replace the pre-launch Privacy Policy and Terms placeholders with reviewed documents.
+3. Add only verified, anonymised portfolio samples and genuine testimonials.
 
 No business statistics, customer information, credentials or contact details are fabricated in this repository.
