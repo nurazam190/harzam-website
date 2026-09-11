@@ -26,7 +26,9 @@
   .value-grid div:nth-child(3) { border-left: 1px solid var(--border); border-top: 1px solid var(--border); }
   .value-grid div:nth-child(4) { border-top: 1px solid var(--border); }
   .service-grid { grid-template-columns: 1fr; max-width: 660px; margin-inline: auto; }
-  .service-card { padding-inline: 34px; }
+  .service-card { height: auto; padding-inline: 34px; }
+  .package-content { flex: 0 1 auto; }
+  .package-footer { margin-top: 0; }
   .package-positioning { min-height: 0; }
   .package-includes .check-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 30px; }
   .difference-grid { grid-template-columns: 1fr; }

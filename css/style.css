@@ -123,8 +123,10 @@ p { color: var(--muted); }
 .value-grid span { display: grid; width: 27px; height: 27px; place-items: center; color: #86672e; background: rgba(198,161,91,.13); border-radius: 50%; }
 
 .services { background: var(--off-white); }
-.service-grid { display: grid; grid-template-columns: repeat(3,1fr); align-items: start; gap: 20px; margin-top: 58px; }
+.service-grid { display: grid; grid-template-columns: repeat(3,1fr); align-items: stretch; gap: 20px; margin-top: 58px; }
 .service-card { position: relative; display: flex; min-width: 0; flex-direction: column; padding: 38px 34px 30px; overflow: hidden; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition); }
+.package-content { display: flex; flex: 1 1 auto; flex-direction: column; }
+.package-footer { flex: 0 0 auto; margin-top: auto; }
 .service-card:hover { border-color: #c9c6bc; box-shadow: var(--shadow); transform: translateY(-6px); }
 .service-card.featured { color: var(--white); background: var(--navy); border-color: var(--navy); }
 .service-card.featured::before { content: ''; position: absolute; width: 220px; height: 220px; top: -120px; right: -100px; border: 1px solid rgba(198,161,91,.35); border-radius: 50%; }
@@ -151,6 +153,10 @@ p { color: var(--muted); }
 .package-section h4 { margin: 0 0 9px; color: var(--navy); font-size: .65rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .package-section p { margin: 0; font-size: .79rem; line-height: 1.7; }
 .featured .package-section h4 { color: var(--gold-light); }
+.package-value { margin-top: 22px; padding: 16px; background: var(--off-white); border: 1px solid rgba(198,161,91,.36); border-radius: 9px; }
+.package-value strong, .package-value span { display: block; }
+.package-value strong { color: #80622e; font-size: .65rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.package-value span { margin-top: 6px; color: var(--navy); font-size: .72rem; font-weight: 700; line-height: 1.5; }
 .check-list { margin: 0; padding: 0; list-style: none; }
 .check-list li { position: relative; margin: 8px 0; padding-left: 23px; color: #48535b; font-size: .78rem; line-height: 1.55; }
 .featured .check-list li { color: rgba(255,255,255,.75); }
