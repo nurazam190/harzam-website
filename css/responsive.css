@@ -5,6 +5,8 @@
   .resume-stage { transform: scale(.9); transform-origin: center right; }
   .service-card { padding-inline: 26px; }
   .difference-grid { gap: 45px; }
+  .portfolio-actions { grid-template-columns: 1fr; }
+  .portfolio-cta { gap: 40px; }
   .positioning-grid { gap: 65px; }
   .about-grid { gap: 70px; }
 }
@@ -37,6 +39,10 @@
   .process-grid::before { display: none; }
   .portfolio-grid { grid-template-columns: 1fr 1fr; }
   .portfolio-card:last-child { grid-column: 1 / -1; width: calc(50% - 12px); justify-self: center; }
+  .portfolio-cta { grid-template-columns: 1fr; align-items: start; }
+  .portfolio-cta .button { justify-self: start; }
+  .case-overview { grid-template-columns: 1fr; }
+  .case-facts { grid-column: 1; grid-row: auto; margin-top: 22px; padding: 20px 0 0; border-top: 1px solid var(--border); border-left: 0; }
   .positioning-grid { grid-template-columns: 1fr; }
   .check-panel { grid-template-columns: 100px 1fr; gap: 34px; }
   .check-mark { width: 96px; height: 96px; }
@@ -94,7 +100,10 @@
   .portfolio-heading > p { margin: -5px 0 35px; }
   .portfolio-grid { grid-template-columns: 1fr; margin-top: 0; }
   .portfolio-card:last-child { grid-column: auto; width: 100%; }
-  .sample-preview { padding: 18px; }
+  .portfolio-card-visual { min-height: 235px; }
+  .portfolio-actions { grid-template-columns: 1fr 1fr; }
+  .portfolio-cta { gap: 27px; margin-top: 42px; padding: 32px 26px; }
+  .portfolio-cta .button { width: 100%; }
   .positioning-list { grid-template-columns: 1fr; }
   .positioning-list > div { min-height: auto; padding: 27px; }
   .positioning-list > div:nth-child(n) { border: 1px solid rgba(255,255,255,.12); border-bottom: 0; }
@@ -115,18 +124,26 @@
   .footer-main { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { align-items: flex-start; flex-direction: column; justify-content: center; gap: 8px; padding: 18px 0; }
-  .sample-dialog { width: calc(100% - 20px); height: 94dvh; max-height: 94dvh; border-radius: 10px; }
-  .dialog-intro { padding: 21px 62px 17px 20px; }
-  .dialog-close { top: 13px; right: 14px; }
-  .dialog-media { padding: 16px; }
-  .dialog-footer { padding: 14px 18px 18px; }
-  .dialog-cta { align-items: stretch; flex-direction: column; gap: 10px; }
-  .dialog-cta .button { width: 100%; }
+  .portfolio-dialog { width: calc(100% - 18px); height: 95dvh; max-height: 95dvh; border-radius: 10px; }
+  .portfolio-dialog-header { padding: 22px 68px 19px 21px; }
+  .portfolio-dialog-header .dialog-close { top: 16px; right: 16px; }
+  .portfolio-dialog-body { padding: 18px; }
+  .case-section { padding: 21px 19px; }
+  .case-study-grid { grid-template-columns: 1fr; }
+  .case-example { grid-template-columns: 1fr; }
+  .case-example-arrow { margin: -4px auto; transform: rotate(90deg); }
+  .case-disclaimer { flex-direction: column; gap: 6px; }
+  .case-disclaimer strong { flex-basis: auto; }
+  .portfolio-dialog-footer { align-items: stretch; flex-direction: column; gap: 10px; padding: 14px 18px 17px; }
+  .portfolio-dialog-footer > p { display: none; }
+  .portfolio-dialog-footer > div { display: grid; grid-template-columns: 1fr 1fr; }
+  .portfolio-dialog-footer .button { width: 100%; text-align: center; }
   .policy-content { padding-top: 65px; }
 }
 
 @media (max-width: 520px) {
   .package-includes .check-list { grid-template-columns: 1fr; }
+  .portfolio-actions { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 390px) {
@@ -142,8 +159,6 @@
   .writing-transformation { padding: 21px 16px; }
   .writing-card { padding: 18px; }
   .writing-positioning h3 { font-size: 1.35rem; }
-  .sample-preview { padding: 14px; }
   .portfolio-content { padding: 22px 20px 24px; }
-  .dialog-intro { padding-left: 18px; }
-  .dialog-footer { padding-inline: 15px; }
+  .portfolio-dialog-footer > div { grid-template-columns: 1fr; }
 }
